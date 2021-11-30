@@ -61,6 +61,7 @@ console.log(maior);
 
 
 
+// exibe todos os numeros impares de uma array e fala se nao tiver numeros
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 numeroImpar = 0;
 for (cont = 0; cont < numbers.length; cont += 1) {
@@ -71,4 +72,36 @@ for (cont = 0; cont < numbers.length; cont += 1) {
 }
 if (numeroImpar === 0) {
     console.log('nao existe nenhum numero impar')
+}
+
+
+
+
+// exibe o menor número de uma array
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menor = numbers[0];
+for (let cont = 0; cont < numbers.length; cont += 1) {
+    
+   if ( numbers[cont] <= menor ) {
+      menor = numbers[cont];
+   }
+}
+console.log(menor);
+
+
+
+
+// cria uma array de 1 a 25
+numeros = [];
+for (let i = 1; i <= 25; i += 1) {
+    numeros.push(i);
+}
+console.log(numeros);
+
+
+
+
+//divide por dois todos os elementos do array criando anteriormente
+for (let i = 0; i < numeros.length; i += 1) {
+    console.log(numeros[i] / 2);
 }
